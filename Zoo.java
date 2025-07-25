@@ -21,6 +21,9 @@ public class Zoo {
             else if(a instanceof Swimable){
                 System.err.println(((Swimable)a).swim());
             }
+            else if(a instanceof Walkable){
+                System.err.println(((Walkable)a).walk());
+            }
         }
     }
 }
