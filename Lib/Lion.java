@@ -1,6 +1,6 @@
 package Lib;
 
-public class Lion extends Mammal{
+public class Lion extends Mammal implements Walkable{
     
     public Lion(String name){
         super(name);
@@ -9,6 +9,11 @@ public class Lion extends Mammal{
     @Override
     public String makeSound() {
         return "Roar!";
+    }
+
+    @Override
+    public String walk() {
+        return "The Lion walk Excellent on the ground.";
     }
     
     
